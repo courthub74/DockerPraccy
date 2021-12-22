@@ -11,18 +11,48 @@
             <input type="text" class="form=control" placeholder="Enter text:"></input>
 
         <!--SUBMIT BUTTON 1-->
+            <style>
+                .button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    background-color: blue;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            </style>
             <button class="button" onclick="input1()">Submit</button>
         </div>
 
         <br>
 
         <!--INPUT 1 OUTPUT-->
-        <div class="alert alert-primary" role="alert" id="output">Input1 Output</div>
+        <div class="alert alert-primary" role="alert" id="output">
+            Input1 Output
+        </div>
+
+        <!--SUBMIT BUTTON 2-->
+        <div class="form-group">
+            <button class="button" onclick="input2()">Click this Button for daily news</button>
+        </div>
+
+        <br>
+
+        <!--SUBMIT BUTTON 2 OUTPUT-->
+        <div class="alert alert-secondary" id="output2">
+            Daily News
+        </div>
 
         <!--JS FOR OUTPUT 1-->
         <script type="text/javascript">
             function input1() {
                 document.getElementById('output').innerHTML = 'You need to now retrieve the data from whats submitted in Input1';
+            }
+
+            function input2() {
+                document.getElementById('output2').innerHTML = 'This Button thinks you are great';
             }
         </script>
 
