@@ -8,32 +8,29 @@
 
 
         <!--INPUT 1-->
-        <div class="form-group">
+            <div class="form-group">
 
-            <!--Label-->
-            <label>Input 1:</label>
+                <!--Label-->
+                <label>Input 1:</label>
 
-            <!--Input-->
-            <input type="text" id="input1" placeholder="Enter text:"></input>
+                <!--Input-->
+                <input type="text" id="input1" placeholder="Enter text:"></input>
 
-
-
-
-        <!--SUBMIT BUTTON 1-->
-            <style>
-                .buttoncss {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    color: white;
-                    background-color: blue;
-                    border-radius: 5px;
-                    outline: none;
-                }
-            </style>
-            <button type="button" class="buttoncss" onclick="inputOne()">Submit</button>
-        </div>
+            <!--SUBMIT BUTTON 1-->
+                <style>
+                    .buttoncss {
+                        display: inline-block;
+                        padding: 10px 20px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        background-color: blue;
+                        border-radius: 5px;
+                        outline: none;
+                    }
+                </style>
+                <button type="button" class="buttoncss" onclick="inputOne()">Submit</button>
+            </div>
 
         <br>
 
@@ -43,13 +40,50 @@
         </div>
 
 
+        <!--INPUT 2-->
+        <div class="form-group">
+
+            <!--Label-->
+            <label>Input 2:</label>
+
+            <!--Input-->
+            <input type="text" id="input2" placeholder="Enter text:"></input>
+
+        <!--SUBMIT BUTTON 2-->
+            <style>
+                .button2css {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    background-color: darkgrey;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            </style>
+            <button type="button" class="button2css" onclick="inputTwo()">Submit</button>
+        </div>
+
+        <br>
+
+        <!--INPUT 2 OUTPUT-->
+        <div class="alert alert-secondary">
+            <span id="output2">Input1 Output</span>
+        </div>
+
         <!--JS FOR OUTPUT 1-->
         <script type="text/javascript">
             //global variables
-            const getInput = document.getElementById('input1'); //gets whats entered into the input field
+            const getInput1 = document.getElementById('input1'); //gets whats entered into the input field1
+            const getInput2 = document.getElementById('input2'); //gets whats entered into the input field2
 
             function inputOne() {
-                document.getElementById('output1').innerHTML = getInput.value; //in output1 print getOutput
+                document.getElementById('output1').innerHTML = getInput1.value; //in output1 print getOutput
+            }
+
+            function inputTwo() {
+                document.getElementById('output2').innerHTML = getInput2.value; //in output1 print getOutput
             }
         </script>
 
