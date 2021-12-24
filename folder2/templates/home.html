@@ -5,14 +5,23 @@
 
     <form>
 
+
+
         <!--INPUT 1-->
         <div class="form-group">
+
+            <!--Label-->
             <label>Input 1:</label>
-            <input type="text" class="form=control" placeholder="Enter text:"></input>
+
+            <!--Input-->
+            <input type="text" id="input1" placeholder="Enter text:"></input>
+
+
+
 
         <!--SUBMIT BUTTON 1-->
             <style>
-                .button {
+                .buttoncss {
                     display: inline-block;
                     padding: 10px 20px;
                     text-align: center;
@@ -23,36 +32,24 @@
                     outline: none;
                 }
             </style>
-            <button class="button" onclick="input1()">Submit</button>
+            <button type="button" class="buttoncss" onclick="inputOne()">Submit</button>
         </div>
 
         <br>
 
         <!--INPUT 1 OUTPUT-->
-        <div class="alert alert-primary" role="alert" id="output">
-            Input1 Output
+        <div class="alert alert-primary">
+            <span id="output1">Input1 Output</span>
         </div>
 
-        <!--SUBMIT BUTTON 2-->
-        <div class="form-group">
-            <button class="button" onclick="input2()">Click this Button for daily news</button>
-        </div>
-
-        <br>
-
-        <!--SUBMIT BUTTON 2 OUTPUT-->
-        <div class="alert alert-secondary" id="output2">
-            Daily News
-        </div>
 
         <!--JS FOR OUTPUT 1-->
         <script type="text/javascript">
-            function input1() {
-                document.getElementById('output').innerHTML = 'You need to now retrieve the data from whats submitted in Input1';
-            }
+            //global variables
+            const getInput = document.getElementById('input1'); //gets whats entered into the input field
 
-            function input2() {
-                document.getElementById('output2').innerHTML = 'This Button thinks you are great';
+            function inputOne() {
+                document.getElementById('output1').innerHTML = getInput.value; //in output1 print getOutput
             }
         </script>
 
